@@ -1,0 +1,8 @@
+body{
+    background: rgb(18,10,156);
+    background: linear-gradient(90deg, rgba(18,10,156,0.9317927854735644) 15%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
+}
+
+.btn{
+    text-decoration: none;
+}

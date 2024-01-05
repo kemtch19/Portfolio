@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.masculino{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(4,0,1,1) 100%);
+    color: #DDD;
+    font-family: 'Satisfy', cursive;    
+}
+
+.masculino-imagen{
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin: 20px;
+    border: solid;
+    border-radius: 50%;
+    image-rendering: auto;
+    background-position: top;
+    background-image: url('https://play-lh.googleusercontent.com/RagJ2nxqi-CTjLz7-c5ql7YEuGBJHRdYnfM-guPhc5tMcjhbFn19YSppbQsr1cqzDw');
+}
+
+.masculino-imagen:hover{
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 50px;
+}
+
+.femenino{
+    font-size: 26px;
+    background: rgb(71,67,172);
+    background: linear-gradient(98deg, rgba(71,67,172,1) 24%, rgba(124,37,124,1) 78%);
+    font-family: 'Cedarville Cursive', cursive; 
+    color: rgb(255, 255, 255);       
+}
+
+.femenino-imagen{
+    display: flex;
+    height: 450px;
+    width: 450px;
+    left: 0;
+    margin: 20px;
+    border: solid;
+    border-radius: 50%;
+    image-rendering: auto;
+    background-position: center;
+    background-image: url('https://img.freepik.com/fotos-premium/chica-anime-futurista-cabello-vibrante-ia-generativa_318002-4101.jpg');
+}
+
+.femenino-imagen:hover{
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 50px ;
+}

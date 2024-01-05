@@ -1,0 +1,61 @@
+button{
+    width: 100%;
+}
+
+#logoKFC{
+    width: 200px;
+}
+
+.card{
+    background-color: antiquewhite;
+    padding: 10px;
+    border: none;
+}
+
+.dark{
+    background-color: #444;
+    color: #fff;
+}
+
+.btnDark{
+    cursor: pointer;
+    background-color: #000;
+    fill: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* tema claro */
+.theme-Light{
+    background-color: azure;
+}
+
+/* Tema Oscuro */
+.theme-Dark{
+    background-color: #444;
+}
+
+.theme-Dark .card{
+    background-color: rgba(17, 16, 16, 0.555);
+    color: red;
+}
+
+.theme-Dark button{
+    background-color: rgba(128, 114, 114, 0.651);
+    border: none;
+}
+
+.theme-Blue{
+    background-color: rgba(45, 45, 211, 0.897);    
+}
+
+.theme-Blue .card{
+    background-color: rgba(4, 4, 161, 0.747);
+    color: #fff;
+}
+
+.theme-Blue button{
+    background-color: rgba(0, 0, 0, 0.596);
+    border: none;
+}
+
