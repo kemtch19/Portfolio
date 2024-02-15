@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Maicol's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>Portafolio Maicol</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row text-light align-items-center justify-content-center vh100 text-center">
-            <div class="col-md-4">
-                <h1>Kemtch Portfolio</h1>
+            <div class="col-md-12 mt-5">
+                <h1>Mi Portafolio</h1>
             </div>
         </div>
-        <div class="row align-items-center vh-100 justify-content-center ">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="assets/kFC.png" alt="">
+        <div class="row align-items-center justify-content-center ">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/KFC.png">
                     <div class="card-body">
-                        <h2>Página de Hamburguesas</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus saepe illum qui dicta nulla, magnam maiores rem voluptatem iste est?</p>
-                        <button class="btn btn-danger w-100"><a href="./KFC/index.html">Let's Go</a></button>
+                        <h2 class="text-center">Página de Hamburguesas</h2>
+                        <p>De manera visual se implementa la página de la francia KFC con el fin de practicar local storage, session storage, bootrsap para las cartas, seguridad de las páginas web, persistencia de configuraciones como los modos de color de la página y el cambio de idioma a Inglés manualmente utilizando DOM</p>
+                        <button class="btn btn-danger w-100"><a href="./KFC/index.html">Visitar</a></button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="assets/Login.png" alt="">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/Login.png">
                     <div class="card-body">
-                        <h2>Login de Usuarios</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat, omnis dolore blanditiis molestiae voluptatem nobis ex voluptatum eaque nisi.</p>
-                        <button class="btn btn-danger w-100"><a href="./Login/index.html">Let's Go</a></button>
+                        <h2 class="text-center">Login de Usuarios</h2>
+                        <p>Se crea desde cero un login que tenga seguridad con localstorage persistoendo si esta logeado y dependiendo su tipo de sexo se le indica el nombre del usuario haciendo que toda la página se adapte al mismo ya sea cambiando, el tipo de letra y el avatar que aparece por defecto</p>
+                        <button class="btn btn-danger w-100"><a href="./Login/index.html">Visitar</a></button>
                     </div>
                 </div>
-            </div>            
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/Tabla_JS.png">
+                    <div class="card-body">
+                        <h2 class="text-center">Tabla solo con JavaScript</h2>
+                        <p>Se implementa solamente un script que esta conectado con un JavaScript y de manera manual se crean la tabla tanto sus filas y sus columnas</p>
+                        <button class="btn btn-danger w-100"><a href="./Tablas_JS/index.html">Visitar</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card h-100">
+                    <img src="assets/img/Hogwarts.png">
+                    <div class="card-body">
+                        <h2 class="text-center">Hogwarts</h2>
+                        <p>Se recrea de las películas de la franquicia Harry Potter la academía de magía hogwarts en donde al igual que un juego podras interactuar como si fueras un estudiante siendo posible por la magia de JavaScript en la cual podemos tomar decisiones, pelear contra dementores, hacer encantamientos y disfrutar de todo los que nos depara la academía según tu casa escogida por el sombrero mágico</p>
+                        <button class="btn btn-danger w-100"><a href="./Hogwarts_con_html/index.html">Visitar</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card h-100">
+                    <img src="assets/img/Base de Datos.png">
+                    <div class="card-body">
+                        <h2 class="text-center">CRUD con Fetch</h2>
+                        <p>Se crea de manera manual un crud completo con todas las opciones que este conlleva todo desde una base ya creada con anterioridad y utilizando postman para hacer testeos de manera que podamos identificar como funciona internamente una llamada fetch haciendo uso de las diferentes sentencias</p>
+                        <button class="btn btn-danger w-100"><a href="./Conexión_Bases_Datos/index.html">Visitar</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card h-100">
+                    <img src="assets/img/Ahorcado.png">
+                    <div class="card-body">
+                        <h2 class="text-center">CRUD con Fetch</h2>
+                        <p>Con los diferentes métodos de javascript para trabajar con arreglos y utilizando solamente javascript creamos por consola el juego del ahorcado en donde tendras 5 vidas para adivinar la palabra que se muestra en la consola</p>
+                        <button class="btn btn-danger w-100"><a href="./Ahorcado/index.html">Visitar</a></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- script de bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

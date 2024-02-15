@@ -36,7 +36,7 @@ try {
         body.classList.remove('theme-Blue');
         body.classList.remove('theme-Dark');
     }
-} catch { }
+} catch {}
 
 // Traductor a Inglés
 function Traductor() {
