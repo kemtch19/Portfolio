@@ -1,12 +1,37 @@
-# React + Vite
+# 🌐 Portafolio – [Maicol Agudelo Taborda]
+¡Bienvenido/a a mi portafolio como desarrollador Full Stack! Este sitio ha sido creado para mostrar mis proyectos, habilidades y servicios como programador, utilizando tecnologías modernas tanto del frontend como del backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🧑‍💻 Sobre mí
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Soy desarrollador Full Stack especializado en JavaScript con experiencia en React.js, Node.js, Express y MongoDB. He trabajado en proyectos reales como **Taskify** (una aplicación de organización personal full stack) y **Riwi Talent** (una plataforma interna para gestión de talento en C# + MudBlazor). Me apasiona construir soluciones escalables, seguras y centradas en el usuario, siguiendo buenas prácticas de desarrollo y documentación.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tecnologías utilizadas
+
+- **Frontend:** React.js + Vite + Tailwind CSS  
+- **Backend:** Node.js + Express.js  
+- **Base de datos:** MongoDB Atlas 
+- **Autenticación:** JWT con cookies HttpOnly  
+- **Subida de archivos:** Cloudinary  
+- **Despliegue:** Vercel (frontend), Render (backend)  
+- **Control de versiones:** Git + GitHub
+- **Extras:** VSCode, Postman, MongoDB Compass, MySQL Workbench, Wikis con Azure DevOps
+
+---
+
+## 📁 Contenido del Portafolio
+
+| Sección              | Descripción                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| 🏠 Inicio             | Bienvenida y  breve resumen personal                      |
+| 🧰 Tecnologías        | Descripciones de las tecnologías que domino                        |
+| 📂 Proyectos          | Lista de proyectos destacados con imágenes, descripciones y links a repos  |
+| 📝 Experiencia        | Breve historial de formación y experiencia (Riwi, Taskify, estudios, etc.) |
+| 🧩 Servicios           | Lista de servicios ofrecidos como desarrollador                            |
+| 📫 Contacto           | Formulario de contacto  + enlaces a redes                         |
+
+---
+
