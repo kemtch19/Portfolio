@@ -1,5 +1,5 @@
 // 🧩 Componentes generales
-import { Navbar } from "./Components/NavBar";
+import { Navbar } from "./Components/Navbar";
 import { Footer } from "./Components/Footer";
 
 // 📄 Páginas o secciones principales
