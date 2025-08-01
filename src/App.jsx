@@ -1,23 +1,45 @@
-import { Header } from "./Components/Header";
-import { Route, Routes } from "react-router-dom";
-import { About, Projects, Contact } from "./Components/Pages";
+// 🧩 Componentes generales
+import { Navbar } from "./Components/NavBar";
+import { Footer } from "./Components/Footer";
 
+// 📄 Páginas o secciones principales
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
+import { Projects } from "./Pages/Projects";
+import { Contact } from "./Pages/Contact";
+import { Skills } from "./Components/Skills";
+
+// 🧠 Componente principal
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <footer className="bg-white shadow p-4 text-center">
-        <p className="text-gray-600">
-          © 2025 Kemtch19. Todos los derechos reservados.
-        </p>
-      </footer>
-    </div>
+     <>
+      <Navbar />
+
+      {/* Contenedor con soporte para fondo oscuro */}
+      <main className="pt-20 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+        <section id="home">
+          <Home />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="skills">
+          <Skills />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+
+      <Footer />
+    </>
   );
 }
 

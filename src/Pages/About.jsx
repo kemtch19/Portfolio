@@ -1,36 +1,67 @@
 export const About = () => {
-  // 🧠 Logic
-
   return (
     <section
       id="about"
-      className="bg-gray-950 text-white py-20 px-6 flex justify-center"
+      className="bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-white py-20 px-6"
     >
-      <div className="max-w-4xl text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-blue-600 mb-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-6 text-center">
           Sobre mí
         </h2>
-        <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-          Soy un desarrollador Full Stack apasionado por crear aplicaciones
-          útiles, con experiencia en React, Node.js, Express, MongoDB y Tailwind
-          CSS. Me he formado en el bootcamp intensivo de <strong>Riwi</strong>,
-          y he liderado el desarrollo completo de <strong>Taskify</strong>, una
-          plataforma tipo to-do list con autenticación, roles, subida de
-          imágenes y mucho más.
-        </p>
-        <p className="text-lg md:text-xl text-gray-300 mt-4 leading-relaxed">
-          Me gusta construir código limpio, modular y bien documentado. Además,
-          tengo habilidades en trabajo en equipo, documentación de proyectos, y
-          experiencia real desarrollando soluciones desde cero, tanto en
-          frontend como backend.
-        </p>
-        <div className="mt-8 text-sm text-gray-400">
+
+        <div className="text-gray-700 dark:text-gray-300 space-y-5 text-lg leading-relaxed">
           <p>
-            Tecnologías principales:{" "}
-            <span className="text-white font-medium">
-              JavaScript (ES6+), React, Node.js, Express, MongoDB, Tailwind CSS,
-              Git, Cloudinary.
+            Soy un desarrollador full stack con experiencia construyendo
+            aplicaciones web modernas usando{" "}
+            <span className="text-blue-500 font-semibold dark:text-blue-400">
+              React, Node.js, Express
+            </span>{" "}
+            y bases de datos como{" "}
+            <span className="text-blue-500 font-semibold dark:text-blue-400">
+              MongoDB y MySQL
             </span>
+            . Me apasiona crear soluciones funcionales y bien estructuradas,
+            desde el backend hasta el diseño visual del frontend.
+          </p>
+
+          <p>
+            He trabajado en proyectos como{" "}
+            <span className="text-blue-500 font-semibold dark:text-blue-400">
+              Taskify
+            </span>
+            , una aplicación tipo to-do list con autenticación, subida de
+            imágenes, gestión de carpetas y tareas, y muchas funcionalidades
+            avanzadas, lo cual fortaleció mis habilidades técnicas y de trabajo
+            en equipo.
+          </p>
+
+          <p>
+            También formé parte del equipo del proyecto{" "}
+            <span className="text-blue-500 font-semibold dark:text-blue-400">
+              Riwi Talent
+            </span>
+            , donde colaboré en el desarrollo de una plataforma para la gestión
+            de talento tech usando{" "}
+            <span className="text-blue-500 font-semibold dark:text-blue-400">
+              C# y MudBlazor
+            </span>
+            , aplicando buenas prácticas de documentación y arquitectura.
+          </p>
+
+          <p>
+            Me formé en la carrera de{" "}
+            <span className="text-blue-500 font-semibold dark:text-blue-400">
+              Tecnología en Desarrollo de Software
+            </span>
+            , donde no solo fortalecí mis habilidades técnicas, sino también el
+            pensamiento lógico, el trabajo colaborativo y el enfoque humano en
+            los proyectos.
+          </p>
+
+          <p>
+            Actualmente, sigo perfeccionando mis conocimientos y trabajando en
+            nuevos proyectos. Mi objetivo es aportar valor a través del código,
+            creando productos digitales que resuelvan problemas reales.
           </p>
         </div>
       </div>
