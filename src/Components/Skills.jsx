@@ -13,24 +13,49 @@ export const Skills = () => {
     { name: "Postman", color: "#FF6C37" },
   ];
 
+  // Definir colores alternativos para badges originalmente negros
+  const getBadgeColors = (color) => {
+    if (color === "#000000") {
+      return {
+        light: "#4B5563", // gray-700
+        dark: "#D1D5DB",  // gray-300
+      };
+    }
+    return {
+      light: color,
+      dark: color,
+    };
+  };
+
+  // Detectar modo oscuro usando la clase 'dark' en html
+  const isDark = typeof window !== "undefined" && document.documentElement.classList.contains("dark");
+
   return (
     <div
-      className="py-16 bg-gray-100 dark:bg-neutral-900 text-center"
+      className="py-16 bg-gray-200 dark:bg-neutral-900 text-center"
       id="skills"
     >
       <h2 className="text-4xl font-bold mb-8 text-gray-800 dark:text-white">
         Tecnologías
       </h2>
       <div className="flex flex-wrap justify-center gap-4 px-4">
-        {skills.map((skill, idx) => (
-          <span
-            key={idx}
-            className="px-4 py-2 rounded-full text-sm font-medium shadow-md text-black dark:text-white"
-            style={{ backgroundColor: skill.color }}
-          >
-            {skill.name}
-          </span>
-        ))}
+        {skills.map((skill, idx) => {
+          const badgeColors = getBadgeColors(skill.color);
+          return (
+            <span
+              key={idx}
+              className="px-4 py-2 rounded-full text-sm font-medium shadow-md
+                text-black dark:text-white border dark:border"
+              style={{
+                backgroundColor: isDark ? "transparent" : badgeColors.light,
+                color: isDark ? badgeColors.dark : "#000",
+                borderColor: isDark ? badgeColors.dark : badgeColors.light,
+              }}
+            >
+              {skill.name}
+            </span>
+          );
+        })}
       </div>
     </div>
   );

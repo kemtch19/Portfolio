@@ -1,10 +1,54 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@plugin "@midudev/tailwind-animations";
 
-/* Scroll suave en todo el sitio */
+@theme {
+  --spacing-icon: 20px;
+  --spacing-input-icon: 16px;
+  --color-input-error: oklch(71% 0.194 13.428);
+}
+
+/* Temas personalizados */
+[data-theme="dark"] {
+  --bg-primary: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  --text-primary: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg-primary: linear-gradient(to bottom, #c4cdd7, #DCE1E7, #eef2f3);
+  --text-primary: #000000;
+}
+
 html {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   scroll-behavior: smooth;
+  transition: color 150ms ease-in-out;
 }
 
 body {
   @apply bg-white text-black dark:bg-black dark:text-white;
+}
+
+/* Transiciones y utilidades */
+.transition-border-color {
+  transition: border-color 300ms ease-in-out;
+}
+
+.transition-border-color-bg {
+  transition: border-color 300ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.transition-text-weight {
+  transition: font-weight 150ms ease-in-out;
+}
+
+.transition-bg {
+  transition: background-color 150ms ease-in-out;
+}
+
+.scrollbar-modal {
+  scrollbar-gutter: unset !important;
 }
