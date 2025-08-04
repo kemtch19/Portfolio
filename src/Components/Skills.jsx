@@ -13,7 +13,6 @@ export const Skills = () => {
     { name: "Postman", color: "#FF6C37" },
   ];
 
-  // Definir colores alternativos para badges originalmente negros
   const getBadgeColors = (color) => {
     if (color === "#000000") {
       return {
@@ -27,29 +26,42 @@ export const Skills = () => {
     };
   };
 
-  // Detectar modo oscuro usando la clase 'dark' en html
   const isDark = typeof window !== "undefined" && document.documentElement.classList.contains("dark");
 
   return (
-    <div
+    <section
       className="py-16 bg-gray-200 dark:bg-neutral-900 text-center"
       id="skills"
     >
-      <h2 className="text-4xl font-bold mb-8 text-gray-800 dark:text-white">
+      <h2 className="text-4xl font-bold mb-10 text-gray-800 dark:text-white">
         Tecnologías
       </h2>
-      <div className="flex flex-wrap justify-center gap-4 px-4">
+
+      <div className="flex flex-wrap justify-center gap-4 px-6 max-w-5xl mx-auto">
         {skills.map((skill, idx) => {
           const badgeColors = getBadgeColors(skill.color);
+
+          const baseStyle = {
+            backgroundColor: isDark ? "transparent" : badgeColors.light,
+            color: isDark ? badgeColors.dark : "#000",
+            borderColor: isDark ? badgeColors.dark : badgeColors.light,
+          };
+
+          const hoverStyle = {
+            backgroundColor: isDark ? badgeColors.dark : "#fff",
+            color: isDark ? "#000" : "#000",
+          };
+
           return (
             <span
               key={idx}
-              className="px-4 py-2 rounded-full text-sm font-medium shadow-md
-                text-black dark:text-white border dark:border"
-              style={{
-                backgroundColor: isDark ? "transparent" : badgeColors.light,
-                color: isDark ? badgeColors.dark : "#000",
-                borderColor: isDark ? badgeColors.dark : badgeColors.light,
+              className="px-5 py-2 rounded-full text-sm font-semibold border shadow-sm transition duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer"
+              style={baseStyle}
+              onMouseEnter={(e) => {
+                Object.assign(e.currentTarget.style, hoverStyle);
+              }}
+              onMouseLeave={(e) => {
+                Object.assign(e.currentTarget.style, baseStyle);
               }}
             >
               {skill.name}
@@ -57,6 +69,6 @@ export const Skills = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
