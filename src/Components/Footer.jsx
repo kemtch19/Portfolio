@@ -10,7 +10,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="text-blue-400 dark:text-blue-600 hover:underline"
           >
-            Maicol Agudelo
+            Maicol
           </a>
           . Todos los derechos reservados.
         </p>
