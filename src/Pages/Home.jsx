@@ -38,7 +38,7 @@ export const Home = () => {
             Ver proyectos
           </a>
           <a
-            href="/public/assets/CV_ Maicol_Agudelo_Taborda.pdf"
+            href="/assets/CV_ Maicol_Agudelo_Taborda.pdf"
             download
             className="inline-flex items-center gap-2 
              bg-white text-black 
